@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+  
+}
+body{
+  
+  background-color: lightblue;
+}
+
+.clx{
+  font-size:19px;
+  border:none;
+  color:red;
+  margin:5px;
+  padding:5px;
+  background-color: lightblue;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+  padding: 5px;
+  display:inline-block;
+  border:1px solid black;
+  margin:10px;
+ border-radius:10px;
+}
+.nav{
+  /* margin-top:100px;
+  display:flex;
+  flex-direction: column;    */
+  margin-left:920px;
+}
+.image-container{
+  margin-top:200px;
+  font-size:40px;
+  margin-left:400px;
+}
+
+
+
+.list{
+    padding:35px;
+    border:2px solid black;
+    border-radius: 5px;
+    width:350px;
+    height:350px;
+    margin-left:400px;
+    margin-top:30px;
+    font-size:20px;
+}
+label{
+  font-weight:bold;
+}
+
+.btn{
+  font-size:20px;
+  padding:8px;
+  margin-top:15px;
+  margin-left:60px;
+  border-radius: 5px;
+}
+
+.table{
+    border:2px solid black;
+    margin-left:200px;
+   
+}
+
+th,td{
+  border:1px solid;
+  padding:15px;
+  margin:5px;
+}
+.sorting-page{
+  margin-left:850px;
+  font-size:20px;
+  margin-top:0;
+}
+
+.product{
+  margin-left:400px;
+  font-size:30px;
+}
+
+.select{
+  box-sizing: border-box;
+}
+
+.createw{
+  margin-left:520px;
+}
+
+.full-data{
+  margin-top:100px;
+  margin-left:150px;
+}
+
+.button{
+  background-color: red;
+  color:white;
+  margin-left:80px;
+  margin-top:25px;
+  font-size:25px;
+  border:5px;
+}
+
+.group{
+  gap:10px;
+  margin:10px;
+}
+
+.onw{
+  margin-left:15px;
+  color:white;
+  background-color: red;
+  font-size:20px;
+}
+
+.onee{
+  color:white;
+  background-color: red;
+  font-size:20px;
+  margin-top:20px;
+}
+
+.edit-1{
+  margin-left:200px;
+  border:1px solid black;
+  width:600px;
+  text-align:center;
+  height:400px;
+}
+
+.edit{
+  color:white;
+  background-color: red;
+  font-size:15px;
+}
+
+.handle{
+  margin-left:150px;
+  padding:0;
+  font-size:35px;
+}
+
+.search-input{
+  height:30px;
+}
+
+.search-results{
+  margin-left:110px;
+  padding:0;
+  margin-bottom:200px;
+}
+
+.title-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.btn{
+  margin-top:10px;
+  font-size:20px;
+  border:1px solid black;
+  color:white;
+  background-color: red;
+  margin-left:500px;
+}
+
+.try{
+  color:white;
+  background-color: red;
+  font-size:15px;
+}
+
+.title-page h1 {
+  margin: 0;
+  color:red;
+  font-size:35px;
+}
+
+.unified-auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.auth-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.login-form,
+.registration-form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.registration-form {
+  transform: rotateY(180deg);
+}
+
+.auth-content {
+    padding:40px;
+    border:2px solid black;
+    border-radius: 5px;
+    width:350px;
+    height:350px;
+    margin-top:10px;
+    font-size:20px;
+    margin:20px;
+    margin-right: 250px;
+    justify-content: center;
+    text-align: center;
+}
+
+.auth-content h2{
+  text-align: center;
+  margin-right:40px;
+  font-size:35px;
+  color:red;
+}
+
+.auth-content input{
+  margin-left: 50px;
+  justify-content: center;
+  align-items:center;
+  height:25px;
+  margin:10px;
+
+}
+
+.server{
+   margin-top:30px;
+   height:50px;
+   width:120px;
+   background-color: red;
+   color:white;
+   font-size:20px;
+   border-radius: 5px;
+}
+
+.plain{
+  margin-top:30px;
+  color:blue;
+}
+
+.auth-content .register{
+  margin-right:10px;
+  font-size:40px;
+  text-transform: capitalize;
+  color:red;
+}
+
+.search-button{
+  height:35px;
+  width:80px;
+  font-size:18px;
+  margin-left:5px;
+  margin-top:9px;
+  color:white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
