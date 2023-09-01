@@ -19,24 +19,34 @@ li{
   text-decoration: none;
   list-style: none;
   padding: 5px;
-  display:inline-block;
-  border:1px solid black;
+  display:flex;
+  flex-direction:row;
+  border:1px solid white;
   margin:10px;
- border-radius:10px;
+  border-radius:10px;
+  width:180px;
+  text-align:center;
+  
+}
+
+.h1{
+  font-size:35px;
+  color:black;
+  margin-left:5px;
+  margin-top:-10px;
 }
 .nav{
   /* margin-top:100px;
   display:flex;
   flex-direction: column;    */
-  margin-left:920px;
+  margin-left:-10px;
+  margin-top:50px;
 }
 .image-container{
-  margin-top:200px;
+  margin-top:250px;
   font-size:40px;
-  margin-left:400px;
+  margin-left:450px;
 }
-
-
 
 .list{
     padding:35px;
@@ -44,9 +54,9 @@ li{
     border-radius: 5px;
     width:350px;
     height:350px;
-    margin-left:400px;
-    margin-top:30px;
     font-size:20px;
+    margin-left:600px;
+    
 }
 label{
   font-weight:bold;
@@ -72,7 +82,7 @@ th,td{
   margin:5px;
 }
 .sorting-page{
-  margin-left:850px;
+  margin-left:900px;
   font-size:20px;
   margin-top:0;
 }
@@ -82,12 +92,16 @@ th,td{
   font-size:30px;
 }
 
+.xlx{
+  margin-top:-400px;
+}
+
 .select{
   box-sizing: border-box;
 }
 
 .createw{
-  margin-left:520px;
+  margin-left:650px;
 }
 
 .full-data{
@@ -124,11 +138,12 @@ th,td{
 }
 
 .edit-1{
-  margin-left:200px;
+  margin-left:450px;
   border:1px solid black;
   width:600px;
   text-align:center;
   height:400px;
+  margin-top:-400px;
 }
 
 .edit{
@@ -184,85 +199,6 @@ th,td{
   font-size:35px;
 }
 
-.unified-auth-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: lightblue;
-}
-
-.auth-container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-
-.login-form,
-.registration-form {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.registration-form {
-  transform: rotateY(180deg);
-}
-
-.auth-content {
-    padding:40px;
-    border:2px solid black;
-    border-radius: 5px;
-    width:350px;
-    height:350px;
-    margin-top:10px;
-    font-size:20px;
-    margin:20px;
-    margin-right: 250px;
-    justify-content: center;
-    text-align: center;
-}
-
-.auth-content h2{
-  text-align: center;
-  margin-right:40px;
-  font-size:35px;
-  color:red;
-}
-
-.auth-content input{
-  margin-left: 50px;
-  justify-content: center;
-  align-items:center;
-  height:25px;
-  margin:10px;
-
-}
-
-.server{
-   margin-top:30px;
-   height:50px;
-   width:120px;
-   background-color: red;
-   color:white;
-   font-size:20px;
-   border-radius: 5px;
-}
-
-.plain{
-  margin-top:30px;
-  color:blue;
-}
-
-.auth-content .register{
-  margin-right:10px;
-  font-size:40px;
-  text-transform: capitalize;
-  color:red;
-}
 
 .search-button{
   height:35px;
@@ -274,6 +210,83 @@ th,td{
   background-color: red;
   border-radius: 5px;
 }
+
+.copper{
+  margin-top:-400px;
+  margin-left:300px;
+}
+
+.search-container{
+  margin-left:400px;
+  margin-top:-300px;
+}
+
+.login{
+  margin-left:700px;
+  margin-top:-200px;
+  padding:20px;
+  border:1px solid white;
+  width:250px;
+  height:230px;
+  text-align:center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: teal;
+
+}
+.login h1{
+  color:azure;
+}
+
+.brox{
+  font-size:20px;
+  color:white;
+  background-color: red;
+  border:1px solid black;
+  border-radius: 5px;
+  margin-top:15px;
+}
+
+.Register{
+  margin-left:700px;
+  margin-top:-200px;
+  padding:20px;
+  border:1px solid white;
+  width:280px;
+  height:270px;
+  text-align:center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: teal;
+}
+
+.Register h1{
+  color:azure;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+
 
 
 

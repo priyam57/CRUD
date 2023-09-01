@@ -1,89 +1,40 @@
-import React, { useState } from 'react';
+import {useState} from 'react';
 
-function LoginPage({ setIsLoggedIn }) {
-  const [isRotated, setIsRotated] = useState(false);
-  const [showRegistration, setShowRegistration] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function Login(props){
+  const[email,setEmail] = useState('')
+  const[password,setPassword] = useState('')
 
-  const handleRotation = () => {
-    setIsRotated(!isRotated);
-    setShowRegistration(!showRegistration);
-  };
+  function handleEmail(e){
+    setEmail(e.target.value)
+  }
 
-  const handleClick = () => {
-    if ( email.trim() === '' || password.trim()=== '') {
-        alert('Please fill in the name and email fields.');
-        return;
+  function handlePassword(e){
+    setPassword(e.target.value)
+  }
+
+  function handleLogin(){
+    const data=JSON.parse(localStorage.getItem('token'))
+    for(let i=0;i<data.length;i++){
+      if(data[i].email===email && data[i].password===password){
+        props.setIsLoggedIn(true)
+        return
       }
-    setIsLoggedIn(true);
-    localStorage.setItem('isLoggedIn', 'true');
-  };
-
-  const handleRegistrationSubmit = () => {
-    if ( email.trim() === '' || password.trim()=== '') {
-        alert('Please fill in the name and email fields.');
-        return;
-      }
-  
-    setIsLoggedIn(true);
-  };
-
-  return (
-    <div className={`unified-auth-page ${isRotated ? 'rotate180' : ''}`}>
-      <div className={`auth-container ${showRegistration ? 'rotate180' : ''}`}>
-        {showRegistration ? (
-            <>
-          <div className="auth-content">
-            <h2 className='register'>Registration</h2>
-            <div className='divider'>
-            <input
-              type="email"
-              placeholder="Email"
-              className='input'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className='input'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            </div>
-            <button className='server' onClick={handleRegistrationSubmit}>Register</button>
-            <p className='plain' onClick={handleRotation}>Already have an Account</p> 
-            </div>
-            
-            </>
-          
-        ) : (
-          <div className="auth-content">
-            <h2>Login</h2>
-            <div className='divider'>
-            <input
-              type="email"
-              placeholder="Email"
-              className='input'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className='input'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            </div>
-            <button className='server' onClick={handleClick}>Login</button>
-            <p className='plain' onClick={handleRotation}>I'm new here</p>
-          </div>
-        )}
-      </div>
+    }
+    props.setIsLoggedIn(false)
+  }
+  return(
+    <>
+    
+    <div className='login'>
+     <h1>Login-Page</h1>
+      <label>Email:</label>
+      <input type='text' placeholder='email' onChange={handleEmail} value={email}/>
+      <br/><br/>
+      <label>Password:</label>
+      <input type='password' placeholder='password' onChange={handlePassword} value={password}/>
+      <br/><br/>
+      <button className='brox' onClick = {handleLogin}>Login</button>
     </div>
-  );
+    </>
+  )
 }
-
-export default LoginPage; 

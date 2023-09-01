@@ -45,8 +45,11 @@ function CreationPage({ onCreateProduct }) {
   ];
 
   return (
-    <div>
-      <h2 className='createw'>Create Product</h2>
+    <>
+    
+    <div className='xlx'>
+    <h2 className='createw'>Create Product</h2>
+     
       <form className='list' onSubmit={handleCreateProduct}>
         <label>Title: </label>
         <input
@@ -97,6 +100,7 @@ function CreationPage({ onCreateProduct }) {
         <button className='button' type='submit'>Create Product</button>
       </form>
     </div>
+    </>
   );
 }
 
